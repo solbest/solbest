@@ -1,6 +1,6 @@
 ### <img src="https://readme-typing-svg.herokuapp.com?lines=Hello,+This+is+Software+Engineer;Python+Golang+Rust+Developer;Always+learning+new+things&center=true&width=500&height=50">
 
-<p align="center"><img src="https://github.com/solbest/solbest/assets/coding.gif" alt="solbest" /></p>
+<p align="center"><img src="./assets/coding.gif" alt="solbest" /></p>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 <p align="center"><img alt="Github Stats" src="https://github-readme-stats.vercel.app/api?username=solbest&show_icons=true&count_private=true&theme=algolia" height="192px" width="450"/></a></p>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
