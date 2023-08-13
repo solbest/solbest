@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" sizes="60x60" href="data:image/png;base64,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" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Science | ML/AI engineer</title>
+    <meta name="color-scheme" content="dark light" />
+    <meta
+      name="google-site-verification"
+      content="U9PjazDHXPisBTAFixsUx0jUlMvKWXHfoyPxP321lsM"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "gx1c51abqi");
+    </script>
+    <script type="module" crossorigin src="/portfolio/assets/index-aa01d0a7.js"></script>
+    <link rel="stylesheet" href="/portfolio/assets/index-688c1e83.css">
+  </head>
+
+  <body>
+    <div id="app">
+      <!-- Nav Bar -->
+      <nav>
+        <svg
+          class="ham"
+          viewBox="0 0 100 100"
+          onclick="this.classList.toggle('active')"
+        >
+          <path
+            class="line top"
+            d="m30 33h40c13.1 0 14.4 31.8 6.9 33.4c-24.6 5.3 9-52.3-12.8-30.6l-28.3 28.3"
+          />
+          <path
+            class="line middle"
+            d="m70 50c0 0-32.2 0-40 0c-7.8 0-6.4-4.6-6.4-8.6c0-5.9 6.1-11.8 12.3-5.6c6.2 6.2 28.3 28.3 28.3 28.3"
+          />
+          <path
+            class="line bottom"
+            d="m69.6 67.1h-40c-13.1 0-14.4-31.8-6.9-33.4c24.6-5.3-9 52.3 12.8 30.6l28.3-28.3"
+          />
+          <style>
+            .ham {
+              cursor: pointer;
+              -webkit-tap-highlight-color: transparent;
+              transition: transform 400ms;
+              -webkit-user-select: none;
+              user-select: none;
+            }
+
+            .line {
+              fill: none;
+              transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+              stroke-width: 5.5;
+              stroke-linecap: round;
+            }
+
+            .ham .top {
+              stroke-dasharray: 40 172;
+            }
+
+            .ham .middle {
+              stroke-dasharray: 40 111;
+            }
+
+            .ham .bottom {
+              stroke-dasharray: 40 172;
+            }
+
+            .ham.active .top {
+              stroke-dashoffset: -132px;
+            }
+
+            .ham.active .middle {
+              stroke-dashoffset: -71px;
+            }
+
+            .ham.active .bottom {
+              stroke-dashoffset: -132px;
+            }
+          </style>
+        </svg>
+
+        <ul>
+          <!-- #0 is the best practice for empty links -->
+          <li><a href="#0">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Theme Toggle -->
+        <!-- Custom element using shadow DOM -->
+        <div style="display: flex; align-items: center">
+          <!-- <iframe src="https://github.com/sponsors/solbest?o=esb" title="Sponsor solbest" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe> -->
+          <theme-toggle></theme-toggle>
+        </div>
+      </nav>
+      <!-- Header -->
+      <header>
+        <div class="header-image fade">
+          <img
+            src="/portfolio/assets/solbest_placeholder-29fc9d5f.png"
+            alt="solbest's Portfolio"
+          />
+        </div>
+        <div class="header-content">
+          <h1>PYTHON to GO to RUST & ML/AI engineering</h1>
+          <h2 class="header-tagline">
+            Tech Enthusiast and Programming Polyglot with passion for
+            Everything!
+          </h2>
+        </div>
+      </header>
+      <main>
+        <!-- About Section -->
+        <section id="about">
+          <h2>About Me</h2>
+          <p>
+            Self-motivated programmer, working at
+            <a
+              class="link"
+              target="_blank"
+              rel="noopener"
+              href="https://github.com/verdevor"
+              >Ommicle Verdevo</a
+            >
+            with a passion for everything. I am currently a backend developer
+            with Python, Golang and RUST after
+            <a
+              class="link"
+              target="_blank"
+              rel="noopener"
+              href="https://www.4icu.org/reviews/5408.htm"
+              >Illinois Institute of Technology</a
+            >
+            . I have a good background in software development and have worked
+            on various projects in the past. I am currently working on GitHub
+            named
+            <a
+              class="link"
+              href="https://github.com/solbest"
+              target="_blank"
+              rel="noopener"
+              >solbest</a
+            >.
+          </p>
+        </section>
+
+        <!-- Languages Section -->
+        <section id="languages">
+          <h2>Languages</h2>
+          <div class="languages-container">
+            <div class="card">
+              <a
+                target="_blank"
+                rel="noopener"
+                href="https://www.rust-lang.org/"
+              >
+                <h3>Rust</h3>
+              </a>
+              <div class="visual">
+                <img src="/portfolio/assets/rust-3b6ba180.svg" alt="Rust Lang Logo" />
+              </div>
+              <p>
+                I really love Rust. It's a great language that I have learned. I
+                use it for Systems development and embedded systems. I have been
+                using Rust for a while now.
+              </p>
+            </div>
+
+            <div class="card">
+              <a target="_blank" rel="noopener" href="https://www.python.org/">
+                <h3>Python</h3>
+              </a>
+              <div class="visual">
+                <img src="/portfolio/assets/python-2a68add3.svg" alt="Python Logo" />
+              </div>
+              <p>
+                I love programming in Python. I have used barely than others. I
+                use it for AI and Machine Learning.
+              </p>
+            </div>
+
+            <div class="card">
+              <a target="_blank" rel="noopener" href="https://golang.org/">
+                <h3>Go</h3>
+              </a>
+              <div class="visual">
+                <img src="/portfolio/assets/go-1de83df1.svg" alt="Go Lang Logo" />
+              </div>
+              <p>
+                I love Go Lang like Rust. I have used it for backend
+                development. I also use it for CLI tools and Restful APIs.
+              </p>
+            </div>
+            <div class="card">
+              <a target="_blank" rel="noopener" href="https://nodejs.org/en/">
+                <h3>Node.js</h3>
+              </a>
+              <div class="visual">
+                <img src="/portfolio/assets/node-6ff540e9.svg" alt="Node.js Logo" />
+              </div>
+              <p>
+                I have been working on Node.js for a some time. I have used it
+                for backend development. I use it to build CLI tools, web
+                servers, and automation.
+              </p>
+            </div>
+            <div class="card">
+              <a target="_blank" rel="noopener" href="https://isocpp.org/">
+                <h3>C/C++</h3>
+              </a>
+              <div class="visual">
+                <img src="/portfolio/assets/cpp-5291200f.svg" alt="C plus plus Logo" />
+              </div>
+              <p>
+                I have a very good basic knowledge of C/C++. I have used it for
+                System Programming.
+              </p>
+            </div>
+            <div class="card">
+              <a
+                target="_blank"
+                rel="noopener"
+                href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/"
+              >
+                <h3>JavaScript</h3>
+              </a>
+
+              <div class="visual">
+                <img src="/portfolio/assets/js-7c29d81d.svg" alt="JavaScript Logo" />
+              </div>
+              <p>
+                I have been working on ES6 for a long time. I have used it for a
+                lot of different projects both in frontend and backend.
+              </p>
+            </div>
+
+            <div class="card">
+              <a
+                target="_blank"
+                rel="noopener"
+                href="https://www.typescriptlang.org/"
+              >
+                <h3>TypeScript</h3>
+              </a>
+              <div class="visual no-bdr-radius">
+                <img src="/portfolio/assets/ts-303a89f6.svg" alt="TypeScript Logo" />
+              </div>
+              <p>
+                I have been working on TypeScript for a some time. I have used
+                it for a lot of different projects and also workings on it.
+              </p>
+            </div>
+            <div class="card">
+              <a target="_blank" rel="noopener" href="https://webassembly.org/">
+                <h3>WebAssembly</h3>
+              </a>
+              <div class="visual">
+                <img src="/portfolio/assets/wasm-1116e31b.svg" alt="Wasm Logo" />
+              </div>
+              <p>
+                I use WebAssembly for my projects. I use it for some
+                computationally intensive projects. I use Rust for WebAssembly.
+                I use it in all of my JavaScript projects.
+              </p>
+            </div>
+
+            <div class="card">
+              <a
+                target="_blank"
+                rel="noopener"
+                href="https://www.electronjs.org/"
+              >
+                <h3>Electron.js</h3>
+              </a>
+              <div class="visual">
+                <img src="/portfolio/assets/electron-9130b2e2.svg" alt="Node.js Logo" />
+              </div>
+              <p>
+                I have been working on Electron.js for a some time. I have used
+                it to create cross-platform desktop GUI apps. I use it to build
+                Raj Browser - Web browser by the web.
+              </p>
+            </div>
+
+            <div class="card">
+              <a target="_blank" rel="noopener" href="https://kotlinlang.org/">
+                <h3>Kotlin</h3>
+              </a>
+              <div class="visual">
+                <img
+                  class="no-bdr-radius"
+                  src="/portfolio/assets/kotlin-35546b04.svg"
+                  alt="Kotlin Logo"
+                />
+              </div>
+              <p>
+                I use Kotlin for Android apps development. I have some very
+                basic knowledge of Kotlin.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+          <h2>My Projects</h2>
+          <div class="projects-container">
+            <div class="project">
+              <div class="project-item">
+                <img
+                  class="project-bg"
+                  src="/portfolio/assets/django2-07d0fcc8.png"
+                  alt="rust.js Image"
+                />
+                <div class="project-description">
+                  <h3>Django-HTML-CSS Portal</h3>
+                  <p>
+                    Django Templeates can sign up and add others as invitation
+                    method.
+                  </p>
+                  <div class="project-buttons">
+                    <a
+                      target="_blank"
+                      rel="noopener"
+                      href="https://github.com/solbest/dj-templates_auth_invite"
+                      ><img
+                        src="/portfolio/assets/github-0e62d3ee.svg"
+                        alt="Github Logo"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-item">
+                <img
+                  class="project-bg"
+                  src="/portfolio/assets/chatbot-98f8c26d.gif"
+                  alt="Windows 11 Image"
+                  _style="padding: 2.5rem;"
+                />
+                <div class="project-description">
+                  <h3>Tracking Chatbot</h3>
+                  <p>
+                    This rasa project is based on concept of NLU and using ML.
+                  </p>
+                  <div class="project-buttons">
+                    <a
+                      target="_blank"
+                      rel="noopener"
+                      href="https://github.com/solbest/chatbot-tracker"
+                      ><img
+                        src="/portfolio/assets/github-0e62d3ee.svg"
+                        alt="Github Logo"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-item">
+                <img
+                  class="project-bg"
+                  src="/portfolio/assets/maxresdefault-2e13fd7d.jpg"
+                  alt="Raj Browser Image"
+                  _style="padding: 2rem;"
+                />
+                <div class="project-description">
+                  <h3>Database Monitoring</h3>
+                  <p>
+                    Go API with Prometheus and grafana integration using Docker
+                    Compose
+                  </p>
+                  <div class="project-buttons">
+                    <a
+                      target="_blank"
+                      rel="noopener"
+                      href="https://github.com/solbest/go-db_pipeline"
+                      ><img
+                        src="/portfolio/assets/github-0e62d3ee.svg"
+                        alt="Github Logo"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-item">
+                <img
+                  class="project-bg"
+                  src="/portfolio/assets/selenium-210a1185.jpg"
+                  alt="rust-player Image"
+                />
+                <div class="project-description">
+                  <h3>Selenium Scraping</h3>
+                  <p>Selenium Web Scraping for Linkend Website.</p>
+                  <div class="project-buttons">
+                    <a
+                      target="_blank"
+                      rel="noopener"
+                      href="https://github.com/solbest/py-seleniumAPI"
+                      ><img
+                        src="/portfolio/assets/github-0e62d3ee.svg"
+                        alt="Github Logo"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-item">
+                <img
+                  class="project-bg"
+                  src="/portfolio/assets/finetune-llm-f0c5d1ba.png"
+                  alt="Large Language Models"
+                />
+                <div class="project-description">
+                  <h3>Finetuned LLMs</h3>
+                  <p>
+                    The supported methods of Finetuning are DeepSpeed, Lora, or
+                    QLora.
+                  </p>
+
+                  <div class="project-buttons">
+                    <a
+                      target="_blank"
+                      rel="noopener"
+                      href="https://github.com/solbest/py-llm-training"
+                      ><img
+                        src="/portfolio/assets/github-0e62d3ee.svg"
+                        alt="Github Logo"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-item">
+                <img
+                  class="project-bg"
+                  src="/portfolio/assets/promptenginering-58e61349.png"
+                  alt="Wish Image"
+                />
+                <div class="project-description">
+                  <h3>ChatGPT Prompt Engineering</h3>
+                  <p>
+                    Involves summarizing, iterative, transforming, inferring,
+                    and expanding techniques.
+                  </p>
+                  <div class="project-buttons">
+                    <a
+                      target="_blank"
+                      rel="noopener"
+                      href="https://github.com/solbest/Wish"
+                      ><img
+                        src="/portfolio/assets/github-0e62d3ee.svg"
+                        alt="Github Logo"
+                    /></a>
+                    <!-- <a
+                      target="_blank"
+                      rel="noopener"
+                      href="https://dub.sh/raja-proj-wish"
+                      ><img
+                        src="/assets/img/icons/preview.svg"
+                        alt="Preview Icon"
+                    /></a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+          <h2>Contact Me</h2>
+          <div class="contacts-container">
+            <div class="contact-item">
+              <div class="contact-item-content">
+                <b>Mail @</b>
+                <a
+                  class="link"
+                  target="_blank"
+                  rel="noopener"
+                  href="mailto:solbest205@gmail.com?subject=Hello!&body=Please%20introduce%20yourself%20for%20me."
+                >
+                  <img
+                    class="no-shadow"
+                    src="/portfolio/assets/gmail-54714797.svg"
+                    alt="Gmail Logo"
+                  />
+                  Gmail
+                </a>
+                <br />
+                <a
+                  class="link"
+                  target="_blank"
+                  rel="noopener"
+                  href="https://join.skype.com/ri0O8NNFas9n"
+                >
+                  <img
+                    class="no-shadow"
+                    src="/portfolio/assets/skype-175e6259.png"
+                    alt="Instagram Logo"
+                  />
+                  Skype
+                </a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-content">
+                <b>Follow @</b>
+                <a
+                  class="link"
+                  target="_blank"
+                  rel="noopener"
+                  href="https://api.github.com/user/following/solbest"
+                >
+                  <img
+                    class="no-shadow"
+                    src="/portfolio/assets/github-0e62d3ee.svg"
+                    alt="Github Logo"
+                  />
+                  Github
+                </a>
+              </div>
+            </div>
+            <!-- <div class="contact-item">
+              <div class="contact-item-content">
+                <b>Subscribe @</b>
+                <a
+                  class="link"
+                  target="_blank"
+                  rel="noopener"
+                  href="https://dub.sh/solbest-youtube"
+                >
+                  <img
+                    class="no-shadow"
+                    src="/assets/img/logos/youtube.svg"
+                    alt="Youtube Logo"
+                  />
+                  YouTube
+                </a>
+              </div>
+            </div> -->
+          </div>
+        </section>
+      </main>
+      <!-- Footer -->
+      <!-- <footer>
+        <p>
+          Made with
+          <img src="/assets/img/animated heart.min.gif" alt="❤️" id="hearts" />
+          by solbest
+          <br />
+          &copy; <span id="year">2021</span> solbest.
+          <script>
+            document.getElementById("year").innerText =
+              new Date().getFullYear();
+          </script>
+        </p>
+      </footer> -->
+
+      <!-- Scroll to Top -->
+      <a
+        id="scroll-to-top"
+        onclick="window.scroll({top:0,left:0,behavior:'smooth'});"
+      >
+        <img
+          class="force-invert"
+          src="/portfolio/assets/up-18c3c536.svg"
+          alt="Up Icon"
+        />
+      </a>
+
+      <!-- sparse objects -->
+      <div class="object">
+        <img
+          src="/portfolio/assets/rocket-fcbe887a.png"
+          loading="lazy"
+          alt="Rocket"
+          id="obj-rocket"
+          style="transform: translate(100vh, 100vh)"
+        />
+      </div>
+    </div>
+    
+  </body>
+</html>
